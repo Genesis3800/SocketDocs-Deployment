@@ -19,7 +19,7 @@ Modularity provides us the following benefits:
 
 More-over we allow applications to customise security for them
 
-![Socket - Frame 1.jpg](img/../../../static/img/Socket_-_Frame_1.jpg)
+![Socket - Frame 1.jpg](img/../../../static/SocketDocs-Deployment/img/Socket_-_Frame_1.jpg)
 
 # Layers and Usage
 
@@ -95,7 +95,7 @@ More-over we allow applications to customise security for them
 
 # Contract Architecture
 
-![Untitled](img/../../../static/img/BroadArchitecture.png)
+![Untitled](img/../../../static/SocketDocs-Deployment/img/BroadArchitecture.png)
 
 ## Contracts and their purposes
 
@@ -113,6 +113,6 @@ More-over we allow applications to customise security for them
 
 ## Message Flow
 
-![Untitled](img/../../../static/img/plugin.png)
+![Untitled](img/../../../static/SocketDocs-Deployment/img/plugin.png)
 
-![Untitled](img/../../../static/img/sendmessage.png)
+![Untitled](img/../../../static/SocketDocs-Deployment/img/sendmessage.png)

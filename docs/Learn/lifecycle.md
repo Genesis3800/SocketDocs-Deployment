@@ -13,7 +13,7 @@ In this section, we dive deeper into the main interactions between Plugs and Soc
 
 ### Connecting to Socket 
 
-<img src="/img/ConnectToDL.png" />
+<img src="/SocketDocs-Deployment/img/ConnectToDL.png" />
 
 Before Plugs can start sending and receiving messages, they need to connect or get "plugged" into Socket. Plugs connect to sibling plugs deployed on other chains by sending configuration details such as sibling chain ID, sibling plug address and switchboard configuration.
 
@@ -29,7 +29,7 @@ Upon connection, Socket generates a unique identifier for the configuration and 
 
 Plugs build on top of Socket to initiate state changes on Plugs deployed on other chains. They do this by passing a message payload that has the state changes encoded, which destination plugs decode and execute.
 
- <img src="/img/SendMessageOutbound.png" />
+ <img src="/SocketDocs-Deployment/img/SendMessageOutbound.png" />
 
 To pass a message, Plugs call the `outbound` method on Socket with `fees`, `siblingChainSlug`, `msgGasLimit`, `payload`, `transmitterParams`, `executorParams`. Socket checks the stored configuration of the plug and verifies a connection with the sibling chain was previously instantiated. It then deducts the fee sent from the plug and pays to various off-chain actors.
 
@@ -49,7 +49,7 @@ Once the packet is sealed on the source chain, the transmitter proposes this sea
 
 The transmitter proposes the packet for specified Switchboard and a `packetCount` is assigned to this proposal. If the address proposing the packet is a valid transmitter, the packet proposal is successful. The packet is stored in a mapping `packetIdRoots` and a `PacketProposed` event is emitted.
 
-<img src="/img/propose-packet.png" width="600px"/>
+<img src="/SocketDocs-Deployment/img/propose-packet.png" width="600px"/>
 
 Once a packet is proposed, depending on the Switchboard used, the packet's validity is verified by watchers. More on [this here](#switchboards-101).
 
@@ -57,7 +57,7 @@ Once the packet is verified, executors then call `execute` on a message. During 
 1. The message is included in a packet (Decapacitor)
 2. The packet has been verified by the switchboard and exists on the source chain (Switchboard)
 
-<img src="/img/ExecuteMessage.png" width="600px"/>
+<img src="/SocketDocs-Deployment/img/ExecuteMessage.png" width="600px"/>
 
 If these are verified, then the message can be executed. `Executors` call the execute() method on Socket which checks if the above cases are verified and calls the `inbound` method on the destination plug. It passes the designated payload to the Plug, which can be arbitrarily executed.
 

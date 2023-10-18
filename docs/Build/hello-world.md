@@ -232,7 +232,7 @@ Deploy both of the contracts to their respective chains.
 
 Once you've deployed the contracts on Goerli and Mumbai, call the `connectPlug` function with the address of the contract deployed on the other chain. You need to do this on both of the contracts.
 
-<img src="/img/connectPlug-hello-world.png" width="500px"/>
+<img src="/SocketDocs-Deployment/img/connectPlug-hello-world.png" width="500px"/>
 
 <br/><br/>
 This establishes a connection between the two Plugs deployed and you can now send messages between them!
@@ -246,13 +246,13 @@ You have two options:
 2. Alternatively, you can also use our off-chain API, referenced in our [docs](../dev-resources/APIReference/EstimateFee.md).
 
 Finally, call the `sendMessage` function on your contract to send the message. This is how it looks like on Remix:
-<img src="/img/sendMessage-hello-world.png" width="400px"/>
+<img src="/SocketDocs-Deployment/img/sendMessage-hello-world.png" width="400px"/>
 
 <br/><br/>
 
 That's it! You can now track the status of your message using the [Status Tracking API](../dev-resources/APIReference/Track.md). Once your message is executed on destination chain, you'll be able to see the `message` value set to "Hello World" on Mumbai.
 
-<img src="/img/success-hello-world.png" width="400px"/>
+<img src="/SocketDocs-Deployment/img/success-hello-world.png" width="400px"/>
 
 <br/><br/>
 

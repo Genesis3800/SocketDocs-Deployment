@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Socket Data Layer',
   tagline: 'The future of modular interoperability',
-  url: 'https://socket.tech',
-  baseUrl: '/',
+  url: 'https://genesis3800.github.io',
+  baseUrl: '/SocketDocs-Deployment/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -31,8 +31,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'socketdottech', // Usually your GitHub org/user name.
-  projectName: 'socketdottech', // Usually your repo name.
+  organizationName: 'Genesis3800', // Usually your GitHub org/user name.
+  projectName: 'SocketDocs-Deployment', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want

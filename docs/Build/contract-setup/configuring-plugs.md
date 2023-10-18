@@ -60,7 +60,7 @@ Below is a quick example for how your Plug can call the `connect` method on Sock
 Once you are done connecting, the transaction will emit a log called `PlugConnected`
 
 For reference, checkout [this example tx](https://goerli.etherscan.io/tx/0x37040ec23ae744c8e4ea2961ceae8a4f32abaf04cc112c017089e95ceefb1653#eventlog) of connecting a Plug
-<img src="/img/plug-connected.png" />
+<img src="/SocketDocs-Deployment/img/plug-connected.png" />
 
 Furthermore, you can do the following to check the connection is successful :
 - Call the `getPlugConfig` function on the Socket contract that returns the config for your Plug for a given destination ChainSlug

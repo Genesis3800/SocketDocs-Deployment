@@ -13,7 +13,7 @@ On the destination chain, contracts called [`Switchboards`](./Learn/Components/S
 
 There are several components in the Socket protocol that work together to make the above happen.
 
-<img src="/img/BroadArchitecture.png" width="700px"/>
+<img src="/SocketDocs-Deployment/img/BroadArchitecture.png" width="700px"/>
 
 
 ## Architecture
@@ -27,6 +27,6 @@ The protocol consists of four key layers:
 4. **Execution Layer**: This layer handles message execution on the destination chain after verification, allowing third-party relayers like Gelato to handle execution, or for applications or users to execute their own messages with various re-try mechanisms etc.
 
 
-<img src="/img/dl-layers.png"/>
+<img src="/SocketDocs-Deployment/img/dl-layers.png"/>
 
 Learn more about individual compoenents in [Components](./Components/Capacitors.md) and [Offchain Agents](./OffChain-Agents.md).
